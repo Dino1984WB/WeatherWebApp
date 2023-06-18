@@ -1,0 +1,71 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1B1F38;
+  color: #FFF;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 36px;
+  color: #00ADB5;
+}
+
+input[type="text"],
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  background-color: #252C48;
+  color: #FFF;
+}
+
+button {
+  width: 100%;
+  background-color: #00ADB5;
+  color: #FFF;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00858F;
+}
+
+#weatherContainer {
+  margin-top: 20px;
+  background-color: #252C48;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#weatherContainer h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #00ADB5;
+}
+
+#weatherContainer p {
+  font-size: 18px;
+  color: #FFF;
+}
+

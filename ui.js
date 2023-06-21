@@ -1,5 +1,7 @@
 class UI {
   static updateUI(weatherData) {
+    console.log(weatherData); // Log the weatherData object to inspect its structure
+    
     const weatherContainer = document.getElementById('weatherContainer');
     weatherContainer.innerHTML = `
       <h2>${weatherData.location.name}</h2>

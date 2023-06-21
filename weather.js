@@ -1,6 +1,6 @@
 class Weather {
   constructor() {
-    this.apiKey = 'fd1973584cc04666b6ce77b7c0c189d1';
+    this.apiKey = '34e1cd8db4fc460094c173346231806';
   }
 
   // Fetch weather data from API

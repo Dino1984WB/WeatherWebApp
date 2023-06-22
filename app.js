@@ -1,25 +1,30 @@
-//William Bukowski was here
-// Create Weather instance
-const weather = new Weather();
+// William Bukowski was here
 
-// Get weather button
-const getWeatherBtn = document.getElementById('getWeatherBtn');
+// Event listener for the Get Weather button
+document.getElementById('getWeatherButton').addEventListener('click', getWeather);
 
-// Add event listener to the get weather button
-getWeatherBtn.addEventListener('click', getWeather);
-
-// Function to get weather information
+// Function to get weather data
 function getWeather() {
-  // Get location input value
-  const locationInput = document.getElementById('locationInput').value;
+  const locationInput = document.getElementById('locationInput');
+  const location = locationInput.value.trim();
 
-  // Call the getWeatherData method of the Weather instance
-  weather.getWeatherData(locationInput)
-    .then(data => {
-      // Update UI with weather information
-      UI.updateUI(data);
-    })
-    .catch(error => {
-      console.log(error);
-    });
+  if (location !== '') {
+    // Clear input field
+    locationInput.value = '';
+
+    // Call the weather API
+    fetch(`https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${location}`)
+      .then(response => response.json())
+      .then(data => {
+        // Pass weather data to UI update function
+        UI.updateUI(data);
+
+        // Update thermometer graph
+        const temperatureF = data.current.temp_f;
+        Thermometer.updateTemperature(temperatureF);
+      })
+      .catch(error => {
+        console.log('Error:', error);
+      });
+  }
 }

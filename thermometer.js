@@ -8,10 +8,17 @@ class Thermometer {
     }
   
     updateTemperature(tempFahrenheit) {
-      const maxHeight = this.mercury.parentNode.clientHeight;
-      const fahrenheitHeight = (tempFahrenheit / 100) * (maxHeight * (1 / 3));
-      this.mercury.style.height = `${fahrenheitHeight}px`;
-    }
+        console.log('Temperature (Fahrenheit):', tempFahrenheit);
+      
+        const maxHeight = this.mercury.parentNode.clientHeight;
+        console.log('Max Height:', maxHeight);
+      
+        const fahrenheitHeight = (tempFahrenheit / 200) * (maxHeight * (2 / 3));
+        console.log('Height (Fahrenheit):', fahrenheitHeight);
+      
+        this.mercury.style.height = `${fahrenheitHeight}px`;
+      }
+      
   }
   
   // Usage Example
@@ -22,7 +29,7 @@ class Thermometer {
     const location = document.getElementById('locationInput').value;
   
     // Fetch weather data from weatherapi.com
-    const apiKey = 'YOUR_API_KEY';
+    const apiKey = '34e1cd8db4fc460094c173346231806';
     const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`);
     const data = await response.json();
   

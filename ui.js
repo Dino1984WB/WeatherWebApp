@@ -9,37 +9,18 @@ class UI {
 
     const weatherAnimation = document.getElementById('weatherAnimation');
     const condition = weatherData.current.condition.text.toLowerCase();
-    const asciiAnimation = this.getAsciiAnimation(condition);
-    weatherAnimation.innerHTML = asciiAnimation;
+    const imageSrc = this.getImageSrc(condition);
+    weatherAnimation.innerHTML = `<img src="${imageSrc}" alt="${condition}">`;
   }
 
-  static getAsciiAnimation(condition) {
+  static getImageSrc(condition) {
     switch (condition) {
       case 'partly cloudy':
-        return `
-          .--.
-       .'_\/_'.
-      '. /--\ .'
-       ' |  | '
-         '.'
-        `;
+        return 'images/cloudy.png';
       case 'sunny':
-        return `
-         \\   /
-          .-.
-      --: / | \\ :--
-          || ||
-        `;
-      case 'windy':
-        return `
-        _  _
-        ( '  ' )
-       (    )    ')
-        (_ (_ .  _) _)
-          '~~'\~~'
-              '\~~
-                \_
-        `;
+        return 'images/sunny.png';
+      case 'rain':
+        return 'images/rain.png';
       default:
         return '';
     }

@@ -1,4 +1,4 @@
-/*William Bukowski was here*/
+/* William Bukowski was here */
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -78,5 +78,6 @@ button:hover {
 
 #weatherContainer p {
   font-size: 18px;
-  color: #FFF;
+  color: #00008B; /* Change to dark blue */
+  font-weight: bold; /* Add font weight to make it bolder */
 }

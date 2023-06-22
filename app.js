@@ -13,7 +13,7 @@ function getWeather() {
     locationInput.value = '';
 
     // Call the weather API
-    fetch(`https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${location}`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=34e1cd8db4fc460094c173346231806&q=${location}`)
       .then(response => response.json())
       .then(data => {
         // Pass weather data to UI update function

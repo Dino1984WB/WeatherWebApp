@@ -1,5 +1,4 @@
-/*William Bukowski was here */
-/* styles.css */
+/* William Bukowski was here*/
 
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
@@ -35,6 +34,11 @@ h1 {
   font-size: 36px;
   color: #00ADB5;
 }
+#sig {
+  color: rgb(62, 142, 145);
+  padding: 5px;
+  font-style: italic;
+}
 
 input[type="text"],
 button {
@@ -55,42 +59,12 @@ input[type="text"] {
 button {
   width: calc(100% - 40px); /* Adjust width to create space on each side */
   cursor: pointer;
+  background-color: #00ADB5; /* Preserve original background color */
 }
 
 button:hover {
-  background-color: #00858F; /* Change hover color to blue */
+  background-color: #00858F; /* Preserve original hover color */
 }
-
-#weatherContainer {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #FFF; /* Change to white */
-  border-radius: 8px;
-}
-
-#weatherContainer h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: #00ADB5;
-}
-
-#weatherContainer p {
-  font-size: 18px;
-  color: #00008B; /* Change to dark blue */
-  font-weight: bold; /* Add font weight to make it bolder */
-}
-
-.weather-container {
-  width: 60%;
-  margin-right: 20px;
-}
-
-.graph-container {
-  width: 40%;
-  position: relative;
-}
-
-/* thermometer.css */
 
 #thermometer {
   width: 40px;

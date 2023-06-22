@@ -1,3 +1,4 @@
+/*William Bukowski was here*/
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -58,6 +59,12 @@ button {
 
 button:hover {
   background-color: #00858F;
+}
+
+#weatherAnimation {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #FFF;
 }
 
 #weatherContainer {

@@ -1,6 +1,5 @@
 //william bukowksi was here
-import thermometer from './thermometer.js';
-import UI from './ui.js';
+//import thermometer from './thermometer.js';
 
 // Update temperature on button click or when fetching weather data
 document.getElementById('getWeatherButton').addEventListener('click', async () => {

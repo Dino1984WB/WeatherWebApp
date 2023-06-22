@@ -1,24 +1,21 @@
 /* William Bukowski was here */
 
-/* thermometer.js */
-
 class Thermometer {
     constructor() {
       this.mercury = document.querySelector('.mercury');
     }
   
     updateTemperature(tempFahrenheit) {
-        console.log('Temperature (Fahrenheit):', tempFahrenheit);
-      
-        const maxHeight = this.mercury.parentNode.clientHeight;
-        console.log('Max Height:', maxHeight);
-      
-        const fahrenheitHeight = (tempFahrenheit / 200) * (maxHeight * (2 / 3));
-        console.log('Height (Fahrenheit):', fahrenheitHeight);
-      
-        this.mercury.style.height = `${fahrenheitHeight}px`;
-      }
-      
+      console.log('Temperature (Fahrenheit):', tempFahrenheit);
+  
+      const maxHeight = this.mercury.parentNode.clientHeight;
+      console.log('Max Height:', maxHeight);
+  
+      const fahrenheitHeight = (tempFahrenheit / 200) * (maxHeight * (2 / 3));
+      console.log('Height (Fahrenheit):', fahrenheitHeight);
+  
+      this.mercury.style.height = `${fahrenheitHeight}px`;
+    }
   }
   
   // Usage Example
@@ -39,4 +36,5 @@ class Thermometer {
     // Update thermometer graph
     thermometer.updateTemperature(temperatureFahrenheit);
   });
+  
   

@@ -1,4 +1,4 @@
-// William Bukowski was here
+/* William Bukowski was here */
 
 class UI {
   static updateUI(weatherData) {
@@ -10,3 +10,5 @@ class UI {
     `;
   }
 }
+
+export default UI;

@@ -1,5 +1,4 @@
-/* William Bukowski was here*/
-
+/*William Bukowski was here*/
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -8,8 +7,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1B1F38;
-  color: #FFF;
+  background-color: #2a305e;
+  color: #02072e;
 }
 
 .app-frame {
